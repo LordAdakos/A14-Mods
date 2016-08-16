@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>MIRVTurret_MortarIncendiary</defName>
+    <label>MIRV Incendiary Mortar</label>
+    <thingClass>Building_TurretGun</thingClass>
+	<graphicData>
+		<texPath>Things/Building/Security/TurretMortarBase</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(4,4)</drawSize>
+	</graphicData>
+	<altitudeLayer>Building</altitudeLayer>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <statBases>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <WorkToMake>2700</WorkToMake>
+      <Beauty>60</Beauty>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>4.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Mannable">
+        <manWorkType>Violent</manWorkType>
+      </li>
+    </comps>
+    <description>A mortar that launches incendiary shells. Must be manned. Explodes when damaged.</description>
+    <size>(2,2)</size>
+    <passability>PassThroughOnly</passability>
+	<pathCost>50</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+	<stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>100</costStuffCount>
+	<costList>
+      <Steel>200</Steel>
+    </costList>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+	<specialDisplayRadius>30</specialDisplayRadius>
+    <building>
+      <turretGunDef>MIRVArtillery_MortarIncendiary</turretGunDef>
+	  <turretShellDef>ArtilleryShell</turretShellDef>
+      <turretBurstWarmupTicks>150</turretBurstWarmupTicks>
+      <turretburstCooldownTicks>1500</turretburstCooldownTicks>
+      <turretTopgraphicPath>Things/Building/Security/TurretMortarIncendiary_Top</turretTopgraphicPath>
+      <buildingTags>
+        <li>Artillery</li>
+        <li>Artillery_BaseDestroyer</li>
+      </buildingTags>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
+    </placeWorkers>
+    <researchPrerequisites>
+		<li>MIRVArtillery</li>
+	</researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>MIRVTurret_MortarBomb</defName>
+    <label>MIRV Mortar</label>
+    <thingClass>Building_TurretGun</thingClass>
+	<graphicData>
+		<texPath>Things/Building/Security/TurretMortarBase</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(4,4)</drawSize>
+	</graphicData>
+	<altitudeLayer>Building</altitudeLayer>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <statBases>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <WorkToMake>2700</WorkToMake>
+      <Beauty>60</Beauty>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>4.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Mannable">
+        <manWorkType>Violent</manWorkType>
+      </li>
+    </comps>
+    <description>A mortar that launches explosive shells. Must be manned. Explodes when damaged.</description>
+    <size>(2,2)</size>
+    <passability>PassThroughOnly</passability>
+	<pathCost>50</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+	<stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>100</costStuffCount>
+	<costList>
+      <Steel>200</Steel>
+    </costList>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+	<specialDisplayRadius>30</specialDisplayRadius>
+    <building>
+      <turretGunDef>MIRVArtillery_MortarBomb</turretGunDef>
+	  <turretShellDef>ArtilleryShell</turretShellDef>
+      <turretBurstWarmupTicks>150</turretBurstWarmupTicks>
+      <turretburstCooldownTicks>1500</turretburstCooldownTicks>
+      <turretTopgraphicPath>Things/Building/Security/TurretMortarBomb_Top</turretTopgraphicPath>
+      <buildingTags>
+        <li>Artillery</li>
+        <li>Artillery_BaseDestroyer</li>
+      </buildingTags>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
+    </placeWorkers>
+    <researchPrerequisites>
+		<li>MIRVArtillery</li>
+	</researchPrerequisites>
+  </ThingDef>
+
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>MIRVTurret_MortarEMP</defName>
+    <label>MIRV EMP mortar</label>
+    <thingClass>Building_TurretGun</thingClass>
+	<graphicData>
+		<texPath>Things/Building/Security/TurretMortarBase</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(4,4)</drawSize>
+    </graphicData>
+	<altitudeLayer>Building</altitudeLayer>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <statBases>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <WorkToMake>2700</WorkToMake>
+      <Beauty>60</Beauty>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>4.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+      </li>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Mannable">
+        <manWorkType>Violent</manWorkType>
+      </li>
+    </comps>
+    <description>A mortar that launches EMP bombs. Must be manned. Explodes when damaged.</description>
+    <size>(2,2)</size>
+    <passability>PassThroughOnly</passability>
+	<pathCost>50</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+	<stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>100</costStuffCount>
+	<costList>
+      <Steel>200</Steel>
+     </costList>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+	<specialDisplayRadius>30</specialDisplayRadius>
+	<building>
+      <turretGunDef>MIRVArtillery_MortarEMP</turretGunDef>
+	  <turretShellDef>ArtilleryShell</turretShellDef>
+      <turretBurstWarmupTicks>150</turretBurstWarmupTicks>
+      <turretburstCooldownTicks>1500</turretburstCooldownTicks>
+      <turretTopgraphicPath>Things/Building/Security/TurretMortarEMP_Top</turretTopgraphicPath>
+      <buildingTags>
+        <li>Artillery</li>
+      </buildingTags>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
+    </placeWorkers>
+    <researchPrerequisites>
+		<li>MIRVArtillery</li>
+	</researchPrerequisites>
+  </ThingDef>
+
+</ThingDefs>

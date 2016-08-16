@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>ImprovedSolarGenerator</defName>
+    <label>Slag Fusion Generator</label>
+    <thingClass>Building</thingClass>
+<graphicData>
+      <texPath>Things/Building/NewPower</texPath>
+      <graphicClass>Graphic_Random</graphicClass>   
+      <drawSize>(3,3)</drawSize>
+      <damageData>
+        <rect>(0,0.3,3,3)</rect>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <fillPercent>0.5</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+    <statBases>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <WorkToMake>2500</WorkToMake>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <description>Produces constant power from slag fusion.  :SCIENCE: </description>
+    <size>(4,4)</size>
+    <building>
+      <ignoreNeedsPower>true</ignoreNeedsPower>
+    </building>
+    <costList>
+      <Steel>150</Steel>
+      <Component>8</Component>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>-3500</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Power</designationCategory>
+    <staticSunShadowHeight>0.20</staticSunShadowHeight>
+    <designationHotkey>Misc5</designationHotkey>
+    <constructEffect>ConstructMetal</constructEffect>
+    <researchPrerequisites>
+      <li>Electricity</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+
+
+
+
+
+
+
+</Buildings>

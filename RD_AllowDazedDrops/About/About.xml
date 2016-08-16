@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+
+    <name>RD - Allow Dazed Drops</name>
+
+    <author>Lost_RD</author>
+
+    <url>https://github.com/lost-RD/AllowDazedDrops</url>
+
+    <targetVersion>0.14.1234</targetVersion>
+
+    <description>Items dropped by dazed pawns will not be forbidden by default</description>
+
+</ModMetaData>

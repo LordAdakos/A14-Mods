@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+
+    <name>RD - Floor Beauty Rebalance</name>
+
+    <author>Lost_RD</author>
+
+    <url>https://github.com/lost-RD/FloorBeautyRebalance</url>
+
+    <targetVersion>0.14.1230</targetVersion>
+
+    <description>Wood floors give 2 beauty instead of 0.\nSmoothed floors give 1 beauty instead of 3.\nSmoothing flores takes a lot less work because it gives a lot less beauty.</description>
+
+</ModMetaData>

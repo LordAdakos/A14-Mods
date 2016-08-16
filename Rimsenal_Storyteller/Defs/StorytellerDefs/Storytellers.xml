@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<StorytellerDefs>
+
+	<StorytellerDef>
+		<defName>Accipiter</defName>
+    <label>Accipiter Hysteric</label>
+    <description>Accipiter, a press agent of Yunhwa Precision has a strange sense of storytelling. In the early stage, Accipiter will take care of your colonists until you have thriving colony. And then? She will destroy you, ruthlessly. Move fast, prepare yourself for her trials.</description>
+    <quotation>Guys, party time is over. It time to face the real story.</quotation>
+    <portraitLarge>Things/Accipiter</portraitLarge>
+    <portraitTiny>Things/AccipiterTiny</portraitTiny>
+    <listOrder>41</listOrder>
+    <comps>
+      <li Class="StorytellerCompProperties_ClassicIntro"/>
+      <li Class="StorytellerCompProperties_ThreatCycle">
+        <minDaysPassed>5</minDaysPassed>
+        <mtbDaysThreatSmall>3.75</mtbDaysThreatSmall>
+        <mtbDaysThreatBig>1.25</mtbDaysThreatBig>
+        <threatCycleLength>5.2</threatCycleLength>
+        <minDaysBetweenThreatBigs>1.9</minDaysBetweenThreatBigs>
+      </li>
+      <li Class="StorytellerCompProperties_CategoryMTB">
+        <minDaysPassed>5</minDaysPassed>
+        <category>Misc</category>
+        <mtbDays>1.60</mtbDays>
+      </li>
+      <li Class="StorytellerCompProperties_AllyInteraction">
+        <minDaysPassed>5</minDaysPassed>
+        <baseMtb>5</baseMtb>
+      </li>
+      <li Class="StorytellerCompProperties_SingleMTB">
+        <incident>OrbitalTraderArrival</incident>
+        <mtbDays>13</mtbDays>
+      </li>
+      <li Class="StorytellerCompProperties_ShipChunkDrop"/>
+      <li Class="StorytellerCompProperties_Disease">
+        <minDaysPassed>5</minDaysPassed>
+      </li>
+    </comps>
+    <desiredPopulationMin>6</desiredPopulationMin>
+    <desiredPopulationMax>16</desiredPopulationMax>
+    <desiredPopulationCritical>18</desiredPopulationCritical>
+  </StorytellerDef>
+
+
+	<StorytellerDef>
+		<defName>Sereniz</defName>
+    <label>Sereniz Sadistic</label>
+    <description>The rogue Federation Peacekeeper Corps commander Sereniz has a mountain of painful stories due to her former jobs nature. In her stories characters usually face their doom after writhing in the agony of endless pain. She loves these kinds of stories. She will generate lots of small, annoying incidents but less raids.</description>
+    <quotation>Tragedies have their own charm. Please enjoy listen a story.</quotation>
+    <portraitLarge>Things/Sereniz</portraitLarge>
+    <portraitTiny>Things/SerenizTiny</portraitTiny>
+    <listOrder>42</listOrder>
+    <comps>
+      <li Class="StorytellerCompProperties_ClassicIntro"/>
+      <li Class="StorytellerCompProperties_ThreatCycle">
+        <minDaysPassed>5</minDaysPassed>
+        <mtbDaysThreatSmall>0.35</mtbDaysThreatSmall>
+        <mtbDaysThreatBig>3.25</mtbDaysThreatBig>
+        <threatCycleLength>9.2</threatCycleLength>
+        <minDaysBetweenThreatBigs>5.8</minDaysBetweenThreatBigs>
+      </li>
+      <li Class="StorytellerCompProperties_CategoryMTB">
+        <minDaysPassed>5</minDaysPassed>
+        <category>Misc</category>
+        <mtbDays>1.60</mtbDays>
+      </li>
+      <li Class="StorytellerCompProperties_AllyInteraction">
+        <minDaysPassed>5</minDaysPassed>
+        <baseMtb>5</baseMtb>
+      </li>
+      <li Class="StorytellerCompProperties_SingleMTB">
+        <incident>OrbitalTraderArrival</incident>
+        <mtbDays>13</mtbDays>
+      </li>
+      <li Class="StorytellerCompProperties_ShipChunkDrop"/>
+      <li Class="StorytellerCompProperties_Disease">
+        <minDaysPassed>5</minDaysPassed>
+      </li>
+    </comps>
+    <desiredPopulationMin>4</desiredPopulationMin>
+    <desiredPopulationMax>13</desiredPopulationMax>
+    <desiredPopulationCritical>18</desiredPopulationCritical>
+  </StorytellerDef>
+
+	<StorytellerDef>
+		<defName>Hildegarde</defName>
+    <label>Hildegarde Epic</label>
+    <description>A Veteran of the grim Mechanoid war and a skald of Jotunheim assault infantry corps, Hildegarde's songs are full of flame and war. Just like Jotunheim Prime's people themselves. She will send more "big threats" while causing less incidents.</description>
+    <quotation>"There is only one way to prove someone's real value. That is the tempering by trials, on the anvil of war."</quotation>
+    <portraitLarge>Things/Hildegarde</portraitLarge>
+    <portraitTiny>Things/HildegardeTiny</portraitTiny>
+    <listOrder>43</listOrder>
+    <comps>
+      <li Class="StorytellerCompProperties_ClassicIntro"/>
+      <li Class="StorytellerCompProperties_ThreatCycle">
+        <minDaysPassed>5</minDaysPassed>
+        <mtbDaysThreatSmall>7</mtbDaysThreatSmall>
+        <mtbDaysThreatBig>0.52</mtbDaysThreatBig>
+        <threatCycleLength>9.2</threatCycleLength>
+        <minDaysBetweenThreatBigs>0.8</minDaysBetweenThreatBigs>
+      </li>
+      <li Class="StorytellerCompProperties_CategoryMTB">
+        <minDaysPassed>5</minDaysPassed>
+        <category>Misc</category>
+        <mtbDays>1.60</mtbDays>
+      </li>
+      <li Class="StorytellerCompProperties_AllyInteraction">
+        <minDaysPassed>5</minDaysPassed>
+        <baseMtb>5</baseMtb>
+      </li>
+      <li Class="StorytellerCompProperties_SingleMTB">
+        <incident>OrbitalTraderArrival</incident>
+        <mtbDays>13</mtbDays>
+      </li>
+      <li Class="StorytellerCompProperties_ShipChunkDrop"/>
+      <li Class="StorytellerCompProperties_Disease">
+        <minDaysPassed>5</minDaysPassed>
+      </li>
+    </comps>
+    <desiredPopulationMin>4</desiredPopulationMin>
+    <desiredPopulationMax>13</desiredPopulationMax>
+    <desiredPopulationCritical>18</desiredPopulationCritical>
+  </StorytellerDef>
+
+</StorytellerDefs>

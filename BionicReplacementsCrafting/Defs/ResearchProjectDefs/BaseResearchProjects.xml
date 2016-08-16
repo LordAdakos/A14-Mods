@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResearchProjectDefs>
+
+	<ResearchProjectDef>
+		<defName>BionicReplacementsMaking</defName>
+		<label>Bionic Replacement Making</label>
+		<description>Allows you to fabricate bionic replacement kits.</description>
+		<baseCost>1200</baseCost>
+		<techLevel>Industrial</techLevel>
+	</ResearchProjectDef>
+
+</ResearchProjectDefs>

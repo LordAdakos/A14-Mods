@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+	<RecipeDef>
+		<defName>Itchy_MakeStoneBlocksSandstone</defName>
+		<label>make sandstone blocks</label>
+		<description>Cuts sandstone chunks into usable stone blocks.</description>
+		<jobString>Stonecutting.</jobString>
+		<workAmount>600</workAmount>
+		<workSpeedStat>StonecuttingSpeed</workSpeedStat>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkSandstone</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<BlocksSandstone>20</BlocksSandstone>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ChunkSandstone</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+		<recipeUsers>
+			<li>TableStonecutter</li>
+		</recipeUsers>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>Itchy_MakeStoneBlocksGranite</defName>
+		<label>make granite blocks</label>
+		<description>Cuts granite chunks into usable stone blocks.</description>
+		<jobString>Stonecutting.</jobString>
+		<workAmount>600</workAmount>
+		<workSpeedStat>StonecuttingSpeed</workSpeedStat>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkGranite</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<BlocksGranite>20</BlocksGranite>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ChunkGranite</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+		<recipeUsers>
+			<li>TableStonecutter</li>
+		</recipeUsers>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>Itchy_MakeStoneBlocksLimestone</defName>
+		<label>make limestone blocks</label>
+		<description>Cuts limestone chunks into usable stone blocks.</description>
+		<jobString>Stonecutting.</jobString>
+		<workAmount>600</workAmount>
+		<workSpeedStat>StonecuttingSpeed</workSpeedStat>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkLimestone</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<BlocksLimestone>20</BlocksLimestone>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ChunkLimestone</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+		<recipeUsers>
+			<li>TableStonecutter</li>
+		</recipeUsers>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>Itchy_MakeStoneBlocksSlate</defName>
+		<label>make slate blocks</label>
+		<description>Cuts slate chunks into usable stone blocks.</description>
+		<jobString>Stonecutting.</jobString>
+		<workAmount>600</workAmount>
+		<workSpeedStat>StonecuttingSpeed</workSpeedStat>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkSlate</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<BlocksSlate>20</BlocksSlate>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ChunkSlate</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+		<recipeUsers>
+			<li>TableStonecutter</li>
+		</recipeUsers>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>Itchy_MakeStoneBlocksMarble</defName>
+		<label>make marble blocks</label>
+		<description>Cuts marble chunks into usable stone blocks.</description>
+		<jobString>Stonecutting.</jobString>
+		<workAmount>600</workAmount>
+		<workSpeedStat>StonecuttingSpeed</workSpeedStat>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ChunkMarble</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<BlocksMarble>20</BlocksMarble>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ChunkMarble</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+		<recipeUsers>
+			<li>TableStonecutter</li>
+		</recipeUsers>
+	</RecipeDef>
+
+</RecipeDefs>

@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <thingClass>Building</thingClass>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+  </ThingDef>
+
+  <ThingDef Abstract="True" ParentName="BuildingBase" Name="TableBase">
+    <thingClass>Building</thingClass>
+    <altitudeLayer>Building</altitudeLayer>
+    <description>People eat off tables when chairs are placed facing them.</description>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <pathCost>60</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <designationCategory>Furniture</designationCategory>
+    <staticSunShadowHeight>0.20</staticSunShadowHeight>
+    <surfaceType>Eat</surfaceType>
+    <comps>
+      <li>
+        <compClass>CompGatherSpot</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="TableBase">
+    <defName>TableShortModular</defName>
+    <label>Modular Table</label>
+    <uiIconPath>Tables/table_menuicon</uiIconPath>	
+	<graphicData>
+		<texPath>Tables/tablelink</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<linkType>Basic</linkType>
+			<linkFlags>
+				<li>Custom1</li>
+		</linkFlags>
+	</graphicData>	
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>450</WorkToMake>
+      <Flammability>1.0</Flammability>
+      <Beauty>8</Beauty>
+    </statBases>
+    <size>(1,1)</size>
+    <costStuffCount>5</costStuffCount>
+    <rotatable>false</rotatable>
+    <placingDraggableDimensions>2</placingDraggableDimensions>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>StoolLinkable</defName>
+    <label>linkable stool</label>
+    <uiIconPath>Tables/chair_menuicon</uiIconPath>
+	<graphicData>
+		<texPath>Tables/chairlink</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<linkType>Basic</linkType>
+			<linkFlags>
+				<li>Custom2</li>
+		</linkFlags>
+      <shadowData>
+        <volume>(0.3, 0.3, 0.6)</volume>
+      </shadowData>
+	</graphicData>
+		<socialPropernessMatters>true</socialPropernessMatters>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToMake>500</WorkToMake>
+      <Flammability>1.0</Flammability>
+      <Beauty>3</Beauty>
+	  <Comfort>0.5</Comfort>
+    </statBases>
+    <description>People sit here.</description>
+    <size>(1,1)</size>
+	<stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>15</costStuffCount>
+    <pathCost>30</pathCost>
+    <designationCategory>Furniture</designationCategory>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+		<building>
+			<isSittable>true</isSittable>
+		</building>
+  </ThingDef>
+
+</Buildings>

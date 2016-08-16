@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ResearchProjectDefs>
+
+	<ResearchProjectDef>
+	    <defName>RH_TemperatureControl</defName>
+	    <label>temperature control</label>
+	    <description>Allows you to build industrial temperature controller buildings.</description>
+	    <baseCost>1500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+		  <li>Electricity</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+</ResearchProjectDefs>

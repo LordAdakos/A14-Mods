@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+	
+  <ThingDef ParentName="BuildingBase">
+		<DefName>TrainingRack</DefName>
+		<label>Training rack</label>
+		<ThingClass>Building_WorkTable</ThingClass>
+		<Description>Training rack with books to learn skills.</Description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/NonDecayingStorage</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,2)</drawSize>
+		</graphicData>
+		<AltitudeLayer>Building</AltitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.4</fillPercent>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<!--<constructEffect>ConstructWood</constructEffect>-->
+		<castEdgeShadows>true</castEdgeShadows>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToMake>500</WorkToMake>
+			<MaxHitPoints>350</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<Size>(2,1)</Size>
+		<DesignationCategory>Production</DesignationCategory>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+  </ThingDef>
+
+</Buildings>

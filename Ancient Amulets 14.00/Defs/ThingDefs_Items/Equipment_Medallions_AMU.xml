@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	<ThingDef Name="MedallionBase" ParentName="ApparelBase" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1500</MarketValue>
+			<SellPriceFactor>0.75</SellPriceFactor>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Accessory</li>
+			</layers>
+			<commonality>0.01</commonality>
+			<tags>
+				<li>Spacer</li>
+			</tags>
+		</apparel>
+		<thingCategories>
+			<li>AMU_AncientAmulets</li>
+		</thingCategories>
+		<tradeTags>
+			<li>AMU_Medal</li>
+		</tradeTags>
+	</ThingDef>
+
+
+
+	<ThingDef ParentName="MedallionBase">
+		<defName>AMU_MedalCouturier</defName>
+		<label>Medallion of the Couturier</label>
+		<description>An ancient amulet resonating with knowledge. The wearer will have the experience of a legendary tailor. </description>
+		<graphicData>
+			<texPath>Cupro/Item/Equipment/Medallion/Couturier</texPath>
+		</graphicData>
+		<equippedStatOffsets>
+			<TailoringSpeed>0.5</TailoringSpeed>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<ThingDef ParentName="MedallionBase">
+		<defName>AMU_MedalResearcher</defName>
+		<label>Medallion of the Researcher</label>
+		<description>An ancient amulet resonating with knowledge. The wearer will have the experience of a legendary researcher. </description>
+		<graphicData>
+			<texPath>Cupro/Item/Equipment/Medallion/Researcher</texPath>
+		</graphicData>
+		<equippedStatOffsets>
+			<GlobalLearningFactor>0.1</GlobalLearningFactor>
+			<ResearchSpeed>0.5</ResearchSpeed>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<ThingDef ParentName="MedallionBase">
+		<defName>AMU_MedalDoctor</defName>
+		<label>Medallion of the Doctor</label>
+		<description>An ancient amulet resonating with knowledge. The wearer will have the experience of a legendary doctor. </description>
+		<graphicData>
+			<texPath>Cupro/Item/Equipment/Medallion/Doctor</texPath>
+		</graphicData>
+		<equippedStatOffsets>
+			<BaseHealingQuality>0.35</BaseHealingQuality>
+			<HealingSpeed>0.35</HealingSpeed>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<ThingDef ParentName="MedallionBase">
+		<defName>AMU_MedalSurgeon</defName>
+		<label>Medallion of the Surgeon</label>
+		<description>An ancient amulet resonating with knowledge. The wearer will have the experience of a legendary surgeon. </description>
+		<graphicData>
+			<texPath>Cupro/Item/Equipment/Medallion/Surgeon</texPath>
+		</graphicData>
+		<equippedStatOffsets>
+			<MedicalOperationSpeed>0.35</MedicalOperationSpeed>
+			<SurgerySuccessChance>0.35</SurgerySuccessChance>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<ThingDef ParentName="MedallionBase">
+		<defName>AMU_MedalChef</defName>
+		<label>Medallion of the Chef</label>
+		<description>An ancient amulet resonating with knowledge. The wearer will have the experience of a legendary chef. </description>
+		<graphicData>
+			<texPath>Cupro/Item/Equipment/Medallion/Chef</texPath>
+		</graphicData>
+		<statBases>
+			<Insulation_Heat>5</Insulation_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<BrewingSpeed>0.1</BrewingSpeed>
+			<CookSpeed>0.5</CookSpeed>
+			<FoodPoisonChance>-0.05</FoodPoisonChance>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<ThingDef ParentName="MedallionBase">
+		<defName>AMU_MedalFarmer</defName>
+		<label>Medallion of the Farmer</label>
+		<description>An ancient amulet resonating with knowledge. The wearer will have the experience of a legendary farmer. </description>
+		<graphicData>
+			<texPath>Cupro/Item/Equipment/Medallion/Farmer</texPath>
+		</graphicData>
+		<equippedStatOffsets>
+			<WorkSpeedGlobal>0.15</WorkSpeedGlobal>
+			<HarvestFailChance>-0.05</HarvestFailChance>
+			<PlantWorkSpeed>0.35</PlantWorkSpeed>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<ThingDef ParentName="MedallionBase">
+		<defName>AMU_MedalSculptor</defName>
+		<label>Medallion of the Sculptor</label>
+		<description>An ancient amulet resonating with knowledge. The wearer will have the experience of a legendary sculptor. </description>
+		<graphicData>
+			<texPath>Cupro/Item/Equipment/Medallion/Sculptor</texPath>
+		</graphicData>
+		<equippedStatOffsets>
+			<SculptingSpeed>0.5</SculptingSpeed>
+			<StonecuttingSpeed>0.15</StonecuttingSpeed>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<ThingDef ParentName="MedallionBase">
+		<defName>AMU_MedalMiner</defName>
+		<label>Medallion of the Miner</label>
+		<description>An ancient amulet resonating with knowledge. The wearer will have the experience of a legendary miner. </description>
+		<graphicData>
+			<texPath>Cupro/Item/Equipment/Medallion/Miner</texPath>
+		</graphicData>
+		<equippedStatOffsets>
+			<MiningSpeed>0.5</MiningSpeed>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<ThingDef ParentName="MedallionBase">
+		<defName>AMU_MedalArchitect</defName>
+		<label>Medallion of the Architect</label>
+		<description>An ancient amulet resonating with knowledge. The wearer will have the experience of a legendary architect. </description>
+		<graphicData>
+			<texPath>Cupro/Item/Equipment/Medallion/Architect</texPath>
+		</graphicData>
+		<equippedStatOffsets>
+			<ConstructionSpeed>0.5</ConstructionSpeed>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<ThingDef ParentName="MedallionBase">
+		<defName>AMU_MedalTamer</defName>
+		<label>Medallion of the Thrumbo Trainer</label>
+		<description>An ancient amulet resonating with knowledge. The wearer will have the experience of a legendary animal trainer. </description>
+		<graphicData>
+			<texPath>Cupro/Item/Equipment/Medallion/Tamer</texPath>
+		</graphicData>
+		<equippedStatOffsets>
+			<TameAnimalChance>0.5</TameAnimalChance>
+			<TrainAnimalChance>1</TrainAnimalChance>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<ThingDef ParentName="MedallionBase">
+		<defName>AMU_MedalMason</defName>
+		<label>Medallion of the Mason</label>
+		<description>An ancient amulet resonating with knowledge. The wearer will have the experience of a legendary mason. </description>
+		<graphicData>
+			<texPath>Cupro/Item/Equipment/Medallion/Mason</texPath>
+		</graphicData>
+		<equippedStatOffsets>
+			<SmoothingSpeed>0.5</SmoothingSpeed>
+			<StonecuttingSpeed>0.5</StonecuttingSpeed>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<ThingDef ParentName="MedallionBase">
+		<defName>AMU_MedalPugilist</defName>
+		<label>Medallion of the Pugilist</label>
+		<description>An ancient amulet resonating with knowledge. The wearer will have the experience of a legendary pugilist. </description>
+		<graphicData>
+			<texPath>Cupro/Item/Equipment/Medallion/Pugilist</texPath>
+		</graphicData>
+		<equippedStatOffsets>
+			<MeleeHitChance>0.75</MeleeHitChance>
+			<MoveSpeed>0.1</MoveSpeed>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<ThingDef ParentName="MedallionBase">
+		<defName>AMU_MedalMarksman</defName>
+		<label>Medallion of the Marksman</label>
+		<description>An ancient amulet resonating with knowledge. The wearer will have the experience of a legendary marksman. </description>
+		<graphicData>
+			<texPath>Cupro/Item/Equipment/Medallion/Marksman</texPath>
+		</graphicData>
+		<equippedStatOffsets>
+			<AimingDelayFactor>-0.15</AimingDelayFactor>
+			<ShootingAccuracy>0.5</ShootingAccuracy>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<ThingDef ParentName="MedallionBase">
+		<defName>AMU_MedalSmith</defName>
+		<label>Medallion of the Smith</label>
+		<description>An ancient amulet resonating with knowledge. The wearer will have the experience of a legendary smith. </description>
+		<graphicData>
+			<texPath>Cupro/Item/Equipment/Medallion/Smith</texPath>
+		</graphicData>
+		<equippedStatOffsets>
+			<SmeltingSpeed>0.5</SmeltingSpeed>
+			<SmithingSpeed>0.5</SmithingSpeed>
+		</equippedStatOffsets>
+	</ThingDef>
+
+
+</Defs>

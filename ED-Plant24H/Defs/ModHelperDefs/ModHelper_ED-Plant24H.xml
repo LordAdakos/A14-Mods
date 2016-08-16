@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<CommunityCoreLibrary.ModHelperDef>
+		<defName>Plants24H</defName>
+		<ModName>ED-Plant24H</ModName>
+		<minCCLVersion>0.14.0</minCCLVersion>
+		<SpecialInjectors>
+			<li>EnhancedDevelopment.Plants24H.DetourInjector</li>
+		</SpecialInjectors>
+	</CommunityCoreLibrary.ModHelperDef>
+</Defs>

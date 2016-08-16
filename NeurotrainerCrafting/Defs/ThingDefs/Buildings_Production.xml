@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef Name="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+	<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
+
+ <ThingDef ParentName="BuildingBase">
+    <DefName>NeurotrainerWorkTable</DefName>
+    <label>Neurotrainer Workbench</label>
+    <ThingClass>Building_WorkTable</ThingClass>
+    <Description>A workbench to produce Neurotrainer.</Description>
+	<graphicData>
+		<texPath>Things/Building/Production/NeurotrainerTable</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(3,1)</drawSize>
+	</graphicData>
+	<CostList>
+      <WoodLog>60</WoodLog>
+      <Steel>50</Steel>
+    </CostList>
+    <AltitudeLayer>Building</AltitudeLayer>
+	<fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToMake>1000</WorkToMake>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <Size>(3,1)</Size>
+    <DesignationCategory>Production</DesignationCategory>
+    <Passability>PassThroughOnly</Passability>
+	<pathCost>70</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <recipes>
+      <li>MakeNeurotrainer</li>
+	  <li>MakeAIPersonaCore</li>
+    </recipes>
+	<inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+	<building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ToolCabinet</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+	<researchPrerequisites>
+		<li>NeurotrainerMaking</li>
+	</researchPrerequisites>
+ </ThingDef>
+</ThingDefs>

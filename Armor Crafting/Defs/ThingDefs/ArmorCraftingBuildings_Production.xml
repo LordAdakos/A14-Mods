@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+	<ThingDef Name="BuildingBase" Abstract="True">
+		<category>Building</category>
+		<soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+		<selectable>true</selectable>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<repairEffect>Repair</repairEffect>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<filthLeaving>BuildingRubble</filthLeaving>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<DefName>ArmorCraftingWorkTable</DefName>
+		<label>Armor Crafting Workbench</label>
+		<ThingClass>Building_WorkTable</ThingClass>
+		<Description>A workbench to produce armor.</Description>
+		<graphicData>
+			<texPath>Things/Building/ArmorCraftingTable</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,1)</drawSize>
+		</graphicData>
+		<constructEffect>ConstructWood</constructEffect>
+		<CostList>
+			<WoodLog>50</WoodLog>
+			<Steel>40</Steel>
+		</CostList>
+		<AltitudeLayer>Building</AltitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToMake>1000</WorkToMake>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<Size>(3,1)</Size>
+		<DesignationCategory>Production</DesignationCategory>
+		<Passability>PassThroughOnly</Passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<recipes>
+			<li>BuildPowerArmor</li>
+			<li>BuildPowerArmorHelmet</li>
+			<li>BuildPersonalShield</li>
+			<li>TakeapartPowerArmor</li>
+			<li>TakeapartPowerArmorHelmet</li>
+			<li>TakeapartPersonalShield</li>
+		</recipes>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ToolCabinet</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>ResearchAdvancedArmorCrafting</li>
+		</researchPrerequisites>
+	</ThingDef>
+</ThingDefs>

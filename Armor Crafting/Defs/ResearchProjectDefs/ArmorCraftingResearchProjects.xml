@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResearchProjectDefs>
+
+	<ResearchProjectDef>
+		<defName>ResearchArmorCrafting</defName>
+		<label>Armor Crafting</label>
+		<description>Build Armor from scrap.</description>
+		<baseCost>900</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites></prerequisites>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>ResearchAdvancedArmorCrafting</defName>
+		<label>Advanced Armor Crafting</label>
+		<description>Build Advanced Armor from scrap.</description>
+		<baseCost>1200</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>ResearchArmorCrafting</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	
+</ResearchProjectDefs>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+	<ThingDef ParentName="BenchBase">
+		<DefName>WeaponCraftingWorkTable</DefName>
+		<label>Weapon Crafting Workbench</label>
+		<ThingClass>Building_WorkTable</ThingClass>
+		<Description>A workbench to produce weapons.</Description>
+		<graphicData>
+			<texPath>Things/Building/WeaponCraftingTable</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,1)</drawSize>
+		</graphicData>
+		<constructEffect>ConstructWood</constructEffect>
+		<CostList>
+			<WoodLog>50</WoodLog>
+			<Steel>40</Steel>
+		</CostList>
+		<AltitudeLayer>Building</AltitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToMake>1000</WorkToMake>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<Size>(3,1)</Size>
+		<DesignationCategory>Production</DesignationCategory>
+		<Passability>PassThroughOnly</Passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<recipes>
+			<li>BuildHandGun</li>
+			<li>BuildSurvivalRifle</li>
+			<li>BuildPDW</li>
+			<li>BuildHeavySMG</li>
+			<li>BuildPumpShotgun</li>
+			<li>BuildSniperRifle</li>
+			<li>BuildLMG</li>
+			<li>BuildMinigun</li>
+			<li>BuildChargeRifle</li>
+			<li>BuildAssaultRifle</li>
+			<li>BuildIncendiaryLauncher</li>
+			<li>TakeapartHandGun</li>
+			<li>TakeapartSurvivalRifle</li>
+			<li>TakeapartPDW</li>
+			<li>TakeapartHeavySMG</li>
+			<li>TakeapartPumpShotgun</li>
+			<li>TakeapartSniperRifle</li>
+			<li>TakeapartLMG</li>
+			<li>TakeapartMinigun</li>
+			<li>TakeapartChargeRifle</li>
+			<li>TakeapartAssaultRifle</li>
+			<li>TakeapartIncendiaryLauncher</li>
+		</recipes>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ToolCabinet</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>WeaponCrafting</li>
+		</researchPrerequisites>
+	</ThingDef>
+</ThingDefs>

@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	<ThingDef Name="BasicRingBase" ParentName="ApparelBase" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+			<SellPriceFactor>0.75</SellPriceFactor>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Hands</li>
+			</bodyPartGroups>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>Spacer</li>
+			</tags>
+		</apparel>
+		<thingCategories>
+			<li>AMU_AncientAmulets</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef Name="RingBase" ParentName="BasicRingBase" Abstract="True">
+		<apparel>
+			<commonality>0.01</commonality>
+		</apparel>
+		<tradeTags>
+			<li>AMU_Ring</li>
+		</tradeTags>
+	</ThingDef>
+
+
+
+	<ThingDef ParentName="BasicRingBase">
+		<defName>AMU_RingBasicSilver</defName>
+		<label>Silver Ring</label>
+		<description>A simple ring.</description>
+		<graphicData>
+			<texPath>Cupro/Item/Equipment/Ring/Silver</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>200</MarketValue>
+		</statBases>
+		<apparel>
+			<commonality>0.08</commonality>
+			<tags>
+				<li>Outlander</li>
+				<li>Spacer</li>
+				<li>Military</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>AMU_BasicRing</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="BasicRingBase">
+		<defName>AMU_RingBasicGold</defName>
+		<label>Gold Ring</label>
+		<description>A simple ring.</description>
+		<graphicData>
+			<texPath>Cupro/Item/Equipment/Ring/Gold</texPath>
+		</graphicData>
+		<statBases>
+			<MarketValue>350</MarketValue>
+		</statBases>
+		<apparel>
+			<commonality>0.05</commonality>
+			<tags>
+				<li>Outlander</li>
+				<li>Spacer</li>
+				<li>Military</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+
+
+
+	<ThingDef ParentName="RingBase">
+		<defName>AMU_RingCouturier</defName>
+		<label>Ring of the Couturier</label>
+		<description>An ancient amulet resonating with knowledge. The wearer will have the experience of a master tailor. </description>
+		<graphicData>
+			<texPath>Cupro/Item/Equipment/Ring/Couturier</texPath>
+		</graphicData>
+		<equippedStatOffsets>
+			<TailoringSpeed>0.25</TailoringSpeed>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<ThingDef ParentName="RingBase">
+		<defName>AMU_RingResearcher</defName>
+		<label>Ring of the Researcher</label>
+		<description>An ancient amulet resonating with knowledge. The wearer will have the experience of a master researcher. </description>
+		<graphicData>
+			<texPath>Cupro/Item/Equipment/Ring/Researcher</texPath>
+		</graphicData>
+		<equippedStatOffsets>
+			<GlobalLearningFactor>0.05</GlobalLearningFactor>
+			<ResearchSpeed>0.25</ResearchSpeed>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<ThingDef ParentName="RingBase">
+		<defName>AMU_RingDoctor</defName>
+		<label>Ring of the Doctor</label>
+		<description>An ancient amulet resonating with knowledge. The wearer will have the experience of a master doctor. </description>
+		<graphicData>
+			<texPath>Cupro/Item/Equipment/Ring/Doctor</texPath>
+		</graphicData>
+		<equippedStatOffsets>
+			<BaseHealingQuality>0.15</BaseHealingQuality>
+			<HealingSpeed>0.15</HealingSpeed>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<ThingDef ParentName="RingBase">
+		<defName>AMU_RingSurgeon</defName>
+		<label>Ring of the Surgeon</label>
+		<description>An ancient amulet resonating with knowledge. The wearer will have the experience of a master surgeon. </description>
+		<graphicData>
+			<texPath>Cupro/Item/Equipment/Ring/Surgeon</texPath>
+		</graphicData>
+		<equippedStatOffsets>
+			<MedicalOperationSpeed>0.15</MedicalOperationSpeed>
+			<SurgerySuccessChance>0.15</SurgerySuccessChance>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<ThingDef ParentName="RingBase">
+		<defName>AMU_RingChef</defName>
+		<label>Ring of the Chef</label>
+		<description>An ancient amulet resonating with knowledge. The wearer will have the experience of a master chef. </description>
+		<graphicData>
+			<texPath>Cupro/Item/Equipment/Ring/Chef</texPath>
+		</graphicData>
+		<statBases>
+			<Insulation_Heat>5</Insulation_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<BrewingSpeed>0.05</BrewingSpeed>
+			<CookSpeed>0.25</CookSpeed>
+			<FoodPoisonChance>-0.025</FoodPoisonChance>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<ThingDef ParentName="RingBase">
+		<defName>AMU_RingFarmer</defName>
+		<label>Ring of the Farmer</label>
+		<description>An ancient amulet resonating with knowledge. The wearer will have the experience of a master farmer. </description>
+		<graphicData>
+			<texPath>Cupro/Item/Equipment/Ring/Farmer</texPath>
+		</graphicData>
+		<equippedStatOffsets>
+			<WorkSpeedGlobal>0.08</WorkSpeedGlobal>
+			<HarvestFailChance>-0.025</HarvestFailChance>
+			<PlantWorkSpeed>0.15</PlantWorkSpeed>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<ThingDef ParentName="RingBase">
+		<defName>AMU_RingSculptor</defName>
+		<label>Ring of the Sculptor</label>
+		<description>An ancient amulet resonating with knowledge. The wearer will have the experience of a master sculptor. </description>
+		<graphicData>
+			<texPath>Cupro/Item/Equipment/Ring/Sculptor</texPath>
+		</graphicData>
+		<equippedStatOffsets>
+			<SculptingSpeed>0.05</SculptingSpeed>
+			<StonecuttingSpeed>0.08</StonecuttingSpeed>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<ThingDef ParentName="RingBase">
+		<defName>AMU_RingMiner</defName>
+		<label>Ring of the Miner</label>
+		<description>An ancient amulet resonating with knowledge. The wearer will have the experience of a master miner. </description>
+		<graphicData>
+			<texPath>Cupro/Item/Equipment/Ring/Miner</texPath>
+		</graphicData>
+		<equippedStatOffsets>
+			<MiningSpeed>0.25</MiningSpeed>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<ThingDef ParentName="RingBase">
+		<defName>AMU_RingArchitect</defName>
+		<label>Ring of the Architect</label>
+		<description>An ancient amulet resonating with knowledge. The wearer will have the experience of a master architect. </description>
+		<graphicData>
+			<texPath>Cupro/Item/Equipment/Ring/Architect</texPath>
+		</graphicData>
+		<equippedStatOffsets>
+			<ConstructionSpeed>0.25</ConstructionSpeed>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<ThingDef ParentName="RingBase">
+		<defName>AMU_RingTamer</defName>
+		<label>Ring of the Thrumbo Trainer</label>
+		<description>An ancient amulet resonating with knowledge. The wearer will have the experience of a master animal trainer. </description>
+		<graphicData>
+			<texPath>Cupro/Item/Equipment/Ring/Tamer</texPath>
+		</graphicData>
+		<equippedStatOffsets>
+			<TameAnimalChance>0.25</TameAnimalChance>
+			<TrainAnimalChance>0.5</TrainAnimalChance>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<ThingDef ParentName="RingBase">
+		<defName>AMU_RingMason</defName>
+		<label>Ring of the Mason</label>
+		<description>An ancient amulet resonating with knowledge. The wearer will have the experience of a master mason. </description>
+		<graphicData>
+			<texPath>Cupro/Item/Equipment/Ring/Mason</texPath>
+		</graphicData>
+		<equippedStatOffsets>
+			<SmoothingSpeed>0.25</SmoothingSpeed>
+			<StonecuttingSpeed>0.25</StonecuttingSpeed>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<ThingDef ParentName="RingBase">
+		<defName>AMU_RingPugilist</defName>
+		<label>Ring of the Pugilist</label>
+		<description>An ancient amulet resonating with knowledge. The wearer will have the experience of a master pugilist. </description>
+		<graphicData>
+			<texPath>Cupro/Item/Equipment/Ring/Pugilist</texPath>
+		</graphicData>
+		<equippedStatOffsets>
+			<MeleeHitChance>0.5</MeleeHitChance>
+			<MoveSpeed>0.05</MoveSpeed>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<ThingDef ParentName="RingBase">
+		<defName>AMU_RingMarksman</defName>
+		<label>Ring of the Marksman</label>
+		<description>An ancient amulet resonating with knowledge. The wearer will have the experience of a master marksman. </description>
+		<graphicData>
+			<texPath>Cupro/Item/Equipment/Ring/Marksman</texPath>
+		</graphicData>
+		<equippedStatOffsets>
+			<AimingDelayFactor>-0.8</AimingDelayFactor>
+			<ShootingAccuracy>0.25</ShootingAccuracy>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<ThingDef ParentName="RingBase">
+		<defName>AMU_RingSmith</defName>
+		<label>Ring of the Smith</label>
+		<description>An ancient amulet resonating with knowledge. The wearer will have the experience of a master smith. </description>
+		<graphicData>
+			<texPath>Cupro/Item/Equipment/Ring/Smith</texPath>
+		</graphicData>
+		<equippedStatOffsets>
+			<SmeltingSpeed>0.25</SmeltingSpeed>
+			<SmithingSpeed>0.25</SmithingSpeed>
+		</equippedStatOffsets>
+	</ThingDef>
+
+
+</Defs>

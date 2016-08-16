@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Resources>
+
+
+  <!-- =========== bases =========== -->
+
+  <ThingDef Name="ResourceBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <label>unspecified resource</label>
+    <category>Item</category>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <useHitPoints>true</useHitPoints>
+    <selectable>true</selectable>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>75</stackLimit>
+    <comps>
+      <li>
+        <compClass>CompForbiddable</compClass>
+      </li>
+    </comps>
+    <alwaysHaulable>true</alwaysHaulable>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <rotatable>false</rotatable>
+    <pathCost>15</pathCost>
+  </ThingDef>
+
+  <ThingDef Name="ResourceVerbBase" ParentName="ResourceBase" Abstract="True">
+    <equipmentType>Primary</equipmentType>
+    <techLevel>Neolithic</techLevel>
+    <comps>
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
+
+
+  <!--=============== Pure stuffs: Basics ====================-->
+  
+  <!--=============== Pure stuffs: Fabric, leather, etc  ====================-->
+
+  <!--=================== Plant products ===============-->
+
+  <ThingDef Abstract="True" ParentName="ResourceBase" Name="PlantProductBase">
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Grain_Drop</soundInteract>
+    <soundDrop>Grain_Drop</soundDrop>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>5</DeteriorationRate>
+    </statBases>
+    <tickerType>Rare</tickerType>
+  </ThingDef>
+
+  <ThingDef Abstract="True" ParentName="PlantProductBase" Name="RawFoodBase">
+    <ingestible>
+      <foodType>VegetableOrFruit</foodType>
+      <eatEffect>EatVegetarian</eatEffect>
+      <soundEat>RawVegetable_Eat</soundEat>
+    </ingestible>
+    <thingCategories>
+      <li>MeatRaw</li>
+    </thingCategories>
+  </ThingDef>
+    
+    <ThingDef ParentName="RawFoodBase">
+    <defName>RawQuorn</defName>
+    <label>quorn</label>
+    <description>Raw protein-rich mushrooms. Nice to eat, even when raw.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/PlantFoodRaw/PlumpHelmets</texPath>
+    </graphicData>
+	<ingestible>
+	<preferability>RawTasty</preferability>
+	<nutrition>0.05</nutrition>
+	</ingestible>
+    <statBases>
+      <MarketValue>3.1</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>21</daysToRotStart>
+      </li>
+    </comps>
+  </ThingDef>
+ 
+
+
+  <!--=============== Medicine ====================-->
+
+
+
+  <!--=============== Shells ====================-->
+
+</Resources>

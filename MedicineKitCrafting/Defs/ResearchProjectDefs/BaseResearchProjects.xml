@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResearchProjectDefs>
+
+	<ResearchProjectDef>
+		<defName>MedicineMaking</defName>
+		<label>Medicine Making</label>
+		<description>Allows you to fabricate medicine kits.</description>
+		<baseCost>300</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tags>
+		</tags>
+		<prerequisites>
+    	</prerequisites>
+	</ResearchProjectDef>
+
+</ResearchProjectDefs>

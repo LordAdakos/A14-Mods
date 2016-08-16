@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Turret_PDWNest</defName>
+    <label>PDW Nest</label>
+    <thingClass>Building_TurretGun</thingClass>
+	<graphicData>
+		<texPath>Things/Building/Security/TurretMortarBase</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(1,1)</drawSize>
+	</graphicData>
+	<altitudeLayer>Building</altitudeLayer>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <statBases>
+      <MaxHitPoints>350</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <WorkToMake>1350</WorkToMake>
+	  <Beauty>-60</Beauty>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Mannable">
+		<manWorkType>Violent</manWorkType>
+      </li>
+    </comps>
+    <description>A manned turret Uzi.</description>
+    <passability>Impassable</passability>
+	<fillPercent>1</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+	<costList>
+      <Steel>110</Steel>
+	  <Gun_PDW>1</Gun_PDW>
+    </costList>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+	<specialDisplayRadius>20</specialDisplayRadius>
+    <building>
+      <ai_combatDangerous>true</ai_combatDangerous>
+	  <turretGunDef>Gun_PDW</turretGunDef>
+      <turretBurstWarmupTicks>100</turretBurstWarmupTicks>
+	  <turretBurstCooldownTicks>100</turretBurstCooldownTicks>
+      <turretTopgraphicPath>Things/Building/Security/TurretImprovised_Top</turretTopgraphicPath>
+    </building>    
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>Turret_AssaultRifleNest</defName>
+    <label>Assault Rifle Nest</label>
+    <thingClass>Building_TurretGun</thingClass>
+	<graphicData>
+		<texPath>Things/Building/Security/TurretMortarBase</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(1,1)</drawSize>
+	</graphicData>
+	<altitudeLayer>Building</altitudeLayer>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <statBases>
+      <MaxHitPoints>350</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <WorkToMake>1350</WorkToMake>
+	  <Beauty>-60</Beauty>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Mannable">
+		<manWorkType>Violent</manWorkType>
+      </li>
+    </comps>
+    <description>A manned turret M-16 Rifle.</description>
+    <passability>Impassable</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>1</fillPercent>
+    <costList>
+      <Steel>110</Steel>
+	  <Gun_AssaultRifle>1</Gun_AssaultRifle>
+    </costList>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+	<specialDisplayRadius>28</specialDisplayRadius>
+    <building>
+      <ai_combatDangerous>true</ai_combatDangerous>
+	  <turretGunDef>Gun_AssaultRifle</turretGunDef>
+      <turretBurstWarmupTicks>1</turretBurstWarmupTicks>
+      <turretTopgraphicPath>Things/Building/Security/TurretImprovised_Top</turretTopgraphicPath>
+    </building>    
+  </ThingDef>  
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>Turret_MachineGunNest</defName>
+    <label>Machinegun Nest</label>
+    <thingClass>Building_TurretGun</thingClass>
+	<graphicData>	
+		<texPath>Things/Building/Security/TurretMortarBase</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(1,1)</drawSize>
+	</graphicData>
+	<altitudeLayer>Building</altitudeLayer>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <statBases>
+      <MaxHitPoints>350</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <WorkToMake>1350</WorkToMake>
+	  <Beauty>-60</Beauty>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Mannable">
+		<manWorkType>Violent</manWorkType>
+      </li>
+    </comps>
+    <description>A manned turret light machine gun.</description>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>1</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+	<costList>
+      <Steel>110</Steel>
+	  <Gun_LMG>1</Gun_LMG>
+    </costList>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+	<specialDisplayRadius>21</specialDisplayRadius>
+    <building>
+      <ai_combatDangerous>true</ai_combatDangerous>
+	  <turretGunDef>Gun_LMG</turretGunDef>
+      <turretBurstWarmupTicks>200</turretBurstWarmupTicks>
+	  <turretBurstCooldownTicks>200</turretBurstCooldownTicks>
+      <turretTopgraphicPath>Things/Building/Security/TurretImprovised_Top</turretTopgraphicPath>
+    </building>    
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Turret_MinigunNest</defName>
+    <label>Minigun Nest</label>
+    <thingClass>Building_TurretGun</thingClass>
+	<graphicData>
+		<texPath>Things/Building/Security/TurretMortarBase</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>(1,1)</drawSize>
+	</graphicData>
+	<altitudeLayer>Building</altitudeLayer>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <statBases>
+      <MaxHitPoints>350</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <WorkToMake>1350</WorkToMake>
+	  <Beauty>-60</Beauty>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Mannable">
+		<manWorkType>Violent</manWorkType>
+      </li>
+    </comps>
+    <description>A manned turret minigun.</description>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>1</fillPercent>
+    <castEdgeShadows>true</castEdgeShadows>
+	<costList>
+      <Steel>110</Steel>
+	  <Gun_Minigun>1</Gun_Minigun>
+    </costList>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+	<specialDisplayRadius>20</specialDisplayRadius>
+	<researchPrerequisites>
+		<li>MannableGatlingGuns</li>
+	</researchPrerequisites>
+    <building>
+      <ai_combatDangerous>true</ai_combatDangerous>
+	  <turretGunDef>Gun_Minigun</turretGunDef>
+      <turretBurstWarmupTicks>100</turretBurstWarmupTicks>
+	  <turretBurstCooldownTicks>100</turretBurstCooldownTicks>
+      <turretTopgraphicPath>Things/Building/Security/TurretImprovised_Top</turretTopgraphicPath>
+    </building>    
+  </ThingDef>  
+  
+</Buildings>

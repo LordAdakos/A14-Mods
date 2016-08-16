@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResearchProjectDefs>
+
+	<ResearchProjectDef>
+		<defName>NeurotrainerMaking</defName>
+		<label>Neurotrainer Making</label>
+		<description>Allows you to fabricate Neurotrainer.</description>
+		<baseCost>1200</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Electricity</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	
+	<!--<ResearchProjectDef>
+		<defName>AIPersonaCoreMaking</defName>
+		<label>AI Persona Core Making</label>
+		<description>Allows you to fabricate AI Persona Core.</description>
+		<baseCost>2400</baseCost>
+	</ResearchProjectDef>-->
+
+</ResearchProjectDefs>

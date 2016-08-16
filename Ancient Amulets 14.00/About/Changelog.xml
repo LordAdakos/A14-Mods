@@ -1,0 +1,56 @@
+<!-- 
+TODO:
+
+
+-->
+
+14.00:
+Updated to A14
+
+v1.21:
+Orbital traders buy/sell amulets
+
+v1.20:
+Fixed cross-mod naming conflicts
+
+v1.13:
+Replaced missing base reference
+
+v1.12:
+Amulets now show up under apparel groupings - can be set to outfits
+
+v1.11:
+Replaced missing thingCategories - stockpiles accept amulets
+
+v1.10:
+updated to a13
+Amulets moved from artifacts to amulets - doesn't interfere with buying artifacts
+Added fancy trader, sells art, amulets, and other expensive things(including the occasional slave)
+Added rings mirroring medallions but with 50% stats
+Added silver and gold basic rings - treasure from raiders/visitors
+Colonists spawn with basic rings, small chance to spawn with specialty ring
+
+v1.01:
+Amulets no longer spawn in apparel pods from the Crash Landing mod
+Amulet raider rarity raised from 0.5% to 1%
+
+v1.00:
+Added Amulet of Sound Mind
+Added Amulet of the Silver Tongue
+Added Amulet of the Foreman
+Added Amulet of the Blacksmith
+Added Amulet of the Barkeep
+Added Medallion of the Couturier
+Added Medallion of the Researcher
+Added Medallion of the Doctor
+Added Medallion of the Surgeon
+Added Medallion of the Chef
+Added Medallion of the Farmer
+Added Medallion of the Sculptor
+Added Medallion of the Miner
+Added Medallion of the Architect
+Added Medallion of the Thrumbo Trainer
+Added Medallion of the Mason
+Added Medallion of the Pugilist
+Added Medallion of the Marksman
+Added Medallion of the Smith

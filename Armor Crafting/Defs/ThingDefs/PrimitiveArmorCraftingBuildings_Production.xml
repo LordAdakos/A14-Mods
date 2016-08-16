@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+	<ThingDef ParentName="BuildingBase">
+		<DefName>PrimitiveArmorCraftingWorkTable</DefName>
+		<label>Primitive Armor Crafting Workbench</label>
+		<ThingClass>Building_WorkTable</ThingClass>
+		<Description>A workbench to produce primitive armor.</Description>
+		<graphicData>
+			<texPath>Things/Building/PrimitiveArmorCraftingTable</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,1)</drawSize>
+		</graphicData>
+		<constructEffect>ConstructWood</constructEffect>
+		<CostList>
+			<WoodLog>30</WoodLog>
+			<Steel>25</Steel>
+		</CostList>
+		<AltitudeLayer>Building</AltitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToMake>1000</WorkToMake>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<Size>(3,1)</Size>
+		<DesignationCategory>Production</DesignationCategory>
+		<Passability>PassThroughOnly</Passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<recipes>
+			<li>BuildKevlarHelmet</li>
+			<li>BuildMilitaryHelmet</li>
+			<li>BuildVestPlate</li>
+			<li>BuildPsychicFoilHelmet</li>
+			<li>TakeapartKevlarHelmet</li>
+			<li>TakeapartMilitaryHelmet</li>
+			<li>TakeapartVestPlate</li>
+			<li>TakeapartPsychicFoilHelmet</li>
+		</recipes>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ToolCabinet</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>ResearchArmorCrafting</li>
+		</researchPrerequisites>
+	</ThingDef>
+</ThingDefs>

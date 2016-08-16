@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+
+    <name>RD - Baby Battery</name>
+
+    <author>Lost_RD</author>
+
+    <url></url>
+
+    <targetVersion>0.14.1234</targetVersion>
+
+    <description>Baby battery! It's half the size, less than half the capacity, costs the same as a whole battery BUT it waste only 10% of the power that goes into it rather than 50%.</description>
+
+</ModMetaData>

@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="ApparelBase" Abstract="True">
+		<thingClass>Apparel</thingClass>
+		<category>Item</category>
+		<selectable>True</selectable>
+		<pathCost>10</pathCost>
+		<useHitPoints>True</useHitPoints>
+		<graphicData>
+			<onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
+		</graphicData>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+			<DeteriorationRate>2</DeteriorationRate>
+			<SellPriceFactor>0.5</SellPriceFactor>
+		</statBases>
+		<altitudeLayer>Item</altitudeLayer>
+		<alwaysHaulable>True</alwaysHaulable>
+		<tickerType>Never</tickerType>
+		<comps>
+			<li Class="CompProperties_Forbiddable"/>
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+
+
+
+	<ThingDef Name="AmuletBase" ParentName="ApparelBase" Abstract="True">
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1500</MarketValue>
+			<SellPriceFactor>0.75</SellPriceFactor>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Accessory</li>
+			</layers>
+			<commonality>0.01</commonality>
+			<tags>
+				<li>Spacer</li>
+			</tags>
+		</apparel>
+		<thingCategories>
+			<li>AMU_AncientAmulets</li>
+		</thingCategories>
+		<tradeTags>
+			<li>AMU_Amulet</li>
+		</tradeTags>
+	</ThingDef>
+
+
+
+
+
+	<ThingDef ParentName="AmuletBase">
+		<defName>AMU_AmuletSoundMind</defName>
+		<label>Amulet of Sound Mind</label>
+		<description>An ancient amulet resonating with soothing energy. The wearer will be calmer and less stressed. </description>
+		<graphicData>
+			<texPath>Cupro/Item/Equipment/Pendant/SoundMind</texPath>
+		</graphicData>
+		<equippedStatOffsets>
+			<MentalBreakThreshold>-0.1</MentalBreakThreshold>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<ThingDef ParentName="AmuletBase">
+		<defName>AMU_AmuletSilverTongue</defName>
+		<label>Amulet of the Silver Tongue</label>
+		<description>An ancient amulet resonating with charismatic energy. The wearer will know the perfect thing to say when talking to others. </description>
+		<graphicData>
+			<texPath>Cupro/Item/Equipment/Pendant/SilverTongue</texPath>
+		</graphicData>
+		<equippedStatOffsets>
+			<SocialImpact>0.2</SocialImpact>
+			<GiftImpact>0.2</GiftImpact>
+			<RecruitPrisonerChance>0.15</RecruitPrisonerChance>
+			<TradePriceImprovement>0.1</TradePriceImprovement>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<ThingDef ParentName="AmuletBase">
+		<defName>AMU_AmuletForeman</defName>
+		<label>Amulet of the Foreman</label>
+		<description>An ancient amulet resonating with knowledge. The wearer will have the knowledge of many people. </description>
+		<graphicData>
+			<texPath>Cupro/Item/Equipment/Pendant/Foreman</texPath>
+		</graphicData>
+		<equippedStatOffsets>
+			<ConstructionSpeed>0.25</ConstructionSpeed>
+			<MiningSpeed>0.25</MiningSpeed>
+			<SmoothingSpeed>0.25</SmoothingSpeed>
+			<StonecuttingSpeed>0.25</StonecuttingSpeed>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<ThingDef ParentName="AmuletBase">
+		<defName>AMU_AmuletBlacksmith</defName>
+		<label>Amulet of the Blacksmith</label>
+		<description>An ancient amulet resonating with knowledge. The wearer will have the knowledge of many people.  </description>
+		<graphicData>
+			<texPath>Cupro/Item/Equipment/Pendant/Blacksmith</texPath>
+		</graphicData>
+		<equippedStatOffsets>
+			<SculptingSpeed>0.3</SculptingSpeed>
+			<SmeltingSpeed>0.3</SmeltingSpeed>
+			<SmithingSpeed>0.3</SmithingSpeed>
+		</equippedStatOffsets>
+	</ThingDef>
+
+	<ThingDef ParentName="AmuletBase">
+		<defName>AMU_AmuletBarkeep</defName>
+		<label>Amulet of the Barkeep</label>
+		<description>An ancient amulet resonating with joyful energy. The wearer will know what makes a good party. </description>
+		<graphicData>
+			<texPath>Cupro/Item/Equipment/Pendant/Barkeep</texPath>
+		</graphicData>
+		<equippedStatOffsets>
+			<MentalBreakThreshold>-0.02</MentalBreakThreshold>
+			<SocialImpact>0.1</SocialImpact>
+			<WorkSpeedGlobal>0.1</WorkSpeedGlobal>
+			<BrewingSpeed>0.5</BrewingSpeed>
+			<CookSpeed>0.05</CookSpeed>
+		</equippedStatOffsets>
+	</ThingDef>
+
+
+</Defs>

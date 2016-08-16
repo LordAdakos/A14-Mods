@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+
+
+	<RecipeDef>
+		<defName>MakeSilage</defName>
+		<label>make silage</label>
+		<description>Make silage from hay and raw corn.</description>
+		<jobString>Making silage.</jobString>
+		<workSpeedStat>BrewingSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<workAmount>300</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawCorn</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Hay</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>RawCorn</li>
+				<li>Hay</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Silage>20</Silage>
+		</products>
+		<workSkill>Cooking</workSkill>
+  		<recipeUsers>
+			<li>Brewery</li>
+		</recipeUsers>
+	</RecipeDef>
+
+
+
+</RecipeDefs>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Stonecutting Tweak v1.02</name>
+  <author>ItchyFlea</author>
+  <targetVersion>0.14.1234</targetVersion>
+  <description>A slight tweak to stonecutting.
+
+This mod simply adds different bills for the different types of stone that exist, allowing for the 'Do until you have X' setting to be used in the bill.
+</description>
+</ModMetaData>

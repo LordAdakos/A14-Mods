@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+	<RecipeDef>
+		<defName>BuildShortBow</defName>
+		<label>Build Short Bow</label>
+		<description>Build short bow for personal defence.</description>
+		<jobString>Building Short Bow.</jobString>
+		<workAmount>400</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>WoodLog</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+		<products>
+			<Bow_Short>1</Bow_Short>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>WoodLog</li>
+				<li>Cloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>TakeapartShortBow</defName>
+		<label>Take Apart Short Bow</label>
+		<description>Take apart short bow for personal defence.</description>
+		<jobString>Take Apart Short Bow.</jobString>
+		<workAmount>400</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Bow_Short</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<WoodLog>3</WoodLog>
+			<Cloth>3</Cloth>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Bow_Short</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+	  
+
+	<RecipeDef>
+		<defName>BuildPila</defName>
+		<label>Build Pila</label>
+		<description>Build pila for personal defence.</description>
+		<jobString>Building Pila.</jobString>
+		<workAmount>500</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>WoodLog</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<Pila>1</Pila>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>WoodLog</li>
+				<li>Cloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>TakeapartPila</defName>
+		<label>Take Apart Pila</label>
+		<description>Take apart pila for personal defence.</description>
+		<jobString>Take Apart Pila.</jobString>
+		<workAmount>500</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Pila</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<Steel>3</Steel>
+			<WoodLog>3</WoodLog>
+			<Cloth>1</Cloth>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Pila</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+
+
+	<RecipeDef>
+		<defName>BuildGreatBow</defName>
+		<label>Build Great Bow</label>
+		<description>Build great bow for personal defence.</description>
+		<jobString>Building Great Bow.</jobString>
+		<workAmount>600</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>WoodLog</li>
+					</thingDefs>	
+				</filter>		
+				<count>4</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>	
+				</filter>		
+				<count>2</count>
+			</li>
+		</ingredients>
+		<products>
+			<Bow_Great>1</Bow_Great>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>WoodLog</li>
+				<li>Cloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>TakeapartGreatBow</defName>
+		<label>Take Apart Great Bow</label>
+		<description>Take apart great bow for personal defence.</description>
+		<jobString>Take Apart Great Bow.</jobString>
+		<workAmount>600</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Bow_Great</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<Steel>2</Steel>
+			<WoodLog>4</WoodLog>
+			<Cloth>2</Cloth>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Bow_Great</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+  
+	<RecipeDef>
+		<defName>BuildArtilleryShell</defName>
+		<label>Build Artillery Shell</label>
+		<description>Build artillery shell for base defence.</description>
+		<jobString>Build Artillery Shell.</jobString>
+		<workAmount>600</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+		</ingredients>
+		<products>
+			<ArtilleryShell>1</ArtilleryShell>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+
+    <RecipeDef>
+		<defName>TakeapartArtilleryShell</defName>
+		<label>Take apart Artillery Shell</label>
+		<description>Take apart Artillery Shell for personal defence.</description>
+		<jobString>Take Apart Artillery Shell.</jobString>
+		<workAmount>600</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ArtilleryShell</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<Steel>8</Steel>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ArtilleryShell</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+	
+</RecipeDefs>

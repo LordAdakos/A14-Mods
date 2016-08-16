@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RecipeDefs>
+
+	<RecipeDef>
+		<defName>BuildVestPlate</defName>
+		<label>Build Vest Plate</label>
+		<description>Build vest plate for personal defence.</description>
+		<jobString>Building vest plate.</jobString>
+		<workAmount>600</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Silver</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>14</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>18</count>
+			</li>
+		</ingredients>
+		<products>
+			<Apparel_VestPlate>1</Apparel_VestPlate>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Silver</li>
+				<li>Steel</li>
+				<li>Plasteel</li>
+				<li>Cloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>TakeapartVestPlate</defName>
+		<label>Take Apart Vest Plate</label>
+		<description>Take apart vest plate for personal defence.</description>
+		<jobString>Take Apart Vest Plate.</jobString>
+		<workAmount>400</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Apparel_VestPlate</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<Silver>40</Silver>
+			<Steel>14</Steel>
+			<Plasteel>12</Plasteel>
+			<Cloth>18</Cloth>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Apparel_VestPlate</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+	  
+	<RecipeDef>
+		<defName>BuildKevlarHelmet</defName>
+		<label>Build Kevlar Helmet</label>
+		<description>Build kevlar helmet for personal defence.</description>
+		<jobString>Building Kevlar Helmet.</jobString>
+		<workAmount>600</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Silver</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>9</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+		</ingredients>
+		<products>
+			<Apparel_KevlarHelmet>1</Apparel_KevlarHelmet>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Silver</li>
+				<li>Steel</li>
+				<li>Plasteel</li>
+				<li>Cloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>TakeapartKevlarHelmet</defName>
+		<label>Take Apart Kevlar Helmet</label>
+		<description>Take apart kevlar helmet for personal defence.</description>
+		<jobString>Take Apart Kevlar Helmet.</jobString>
+		<workAmount>400</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Apparel_KevlarHelmet</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<Silver>20</Silver>
+			<Steel>9</Steel>
+			<Plasteel>6</Plasteel>
+			<Cloth>6</Cloth>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Apparel_KevlarHelmet</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>BuildMilitaryHelmet</defName>
+		<label>Build Military Helmet</label>
+		<description>Build military helmet for personal defence.</description>
+		<jobString>Building Military Helmet.</jobString>
+		<workAmount>600</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Silver</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>	
+				</filter>		
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>	
+				</filter>		
+				<count>6</count>
+			</li>
+		</ingredients>
+		<products>
+			<Apparel_MilitaryHelmet>1</Apparel_MilitaryHelmet>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Silver</li>
+				<li>Steel</li>
+				<li>Plasteel</li>
+				<li>Cloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>TakeapartMilitaryHelmet</defName>
+		<label>Take Apart Military Helmet</label>
+		<description>Take apart MilitaryHelmet for personal defence.</description>
+		<jobString>Take Apart Military Helmet.</jobString>
+		<workAmount>400</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Apparel_MilitaryHelmet</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<Silver>20</Silver>
+			<Steel>10</Steel>
+			<Plasteel>2</Plasteel>
+			<Cloth>6</Cloth>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Apparel_MilitaryHelmet</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+  
+  	<RecipeDef>
+		<defName>BuildPsychicFoilHelmet</defName>
+		<label>Build psychic foil helmet</label>
+		<description>Build psychic foil helmet for personal defence.</description>
+		<jobString>Building Psychic Foil Helmet.</jobString>
+		<workAmount>600</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Silver</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<products>
+			<Apparel_PsychicFoilHelmet>1</Apparel_PsychicFoilHelmet>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Silver</li>
+				<li>Steel</li>
+				<li>Cloth</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>TakeapartPsychicFoilHelmet</defName>
+		<label>Take Apart Psychic Foil Helmet</label>
+		<description>Take apart psychic foil helmet for personal defence.</description>
+		<jobString>Take Apart Psychic Foil Helmet.</jobString>
+		<workAmount>400</workAmount>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Apparel_PsychicFoilHelmet</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<Silver>200</Silver>
+			<Steel>10</Steel>
+			<Cloth>10</Cloth>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Apparel_PsychicFoilHelmet</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+	
+</RecipeDefs>

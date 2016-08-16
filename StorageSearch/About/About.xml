@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Storage Search</name>
+  <author>Meonester</author>
+  <targetVersion>0.14.1234</targetVersion>
+  <description>
+    This Mod allows you to search by name in storage filter tab. Original A12 version by meonester.
+    Updated for A14 by Killface.
+  </description>
+</ModMetaData>

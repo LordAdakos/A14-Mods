@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResearchProjectDefs>
+
+	<ResearchProjectDef>
+		<defName>MIRVArtillery</defName>
+		<label>MIRV Artillery</label>
+		<description>Allows you to build MIRV Artillery to carpet your enemies with shells.</description>
+		<baseCost>1200</baseCost>
+	    <techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Mortars</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+</ResearchProjectDefs>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <CommunityCoreLibrary.ModHelperDef>
+        <defName>DevSpeedEnabler</defName>
+
+        <ModName>Dev Speed Enabler</ModName>
+
+        <minCCLVersion>0.14.0</minCCLVersion>
+		
+		<SpecialInjectors>
+            <li>DevSpeedEnabler.DetourInjector</li>
+        </SpecialInjectors>
+
+    </CommunityCoreLibrary.ModHelperDef>
+
+</Defs>

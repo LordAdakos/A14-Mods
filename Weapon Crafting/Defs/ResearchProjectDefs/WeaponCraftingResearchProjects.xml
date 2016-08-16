@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResearchProjectDefs>
+
+	<ResearchProjectDef>
+		<defName>WeaponCrafting</defName>
+		<label>Weapon Crafting</label>
+		<description>Build guns from scrap.</description>
+		<baseCost>600</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tags>
+		</tags>
+		<prerequisites></prerequisites>
+	</ResearchProjectDef>
+	
+</ResearchProjectDefs>

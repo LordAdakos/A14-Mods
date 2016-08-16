@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Efficient Light</name>
+	<author>Rimfire</author>
+	<targetVersion>0.14.1238</targetVersion>
+	<description>Lowers power consumption of standing lamp from 150 to 25.</description>
+</ModMetaData>
